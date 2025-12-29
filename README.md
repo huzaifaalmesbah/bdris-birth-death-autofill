@@ -25,32 +25,37 @@ It injects a smart **"Paste Number"** button directly into the page, allowing yo
 
 ## 📦 Installation Guide
 
-Since this is an open-source tool, you can install it in less than a minute:
+Follow these simple steps to install the extension manually:
 
-1.  **Download**: Click the green **Code** button above ➔ **Download ZIP**.
-2.  **Extract**: Unzip the file. You'll see a folder named `bdris-birth-death-autofill`.
-3.  **Open Extensions**: In Chrome, go to `chrome://extensions/` (or click ⋮ ➔ Extensions ➔ Manage Extensions).
-4.  **Enable Developer Mode**: Turn on the toggle switch in the top-right corner.
-5.  **Load Unpacked**: Click the **Load unpacked** button (top-left) and select the `bdris-birth-death-autofill` folder.
+### 1. Download & Extract
+Click the green **Code** button and select **Download ZIP**. Then **Unzip (Extract)** the downloaded file.
 
-🎉 **Done!** You should now see the extension icon in your toolbar.
+![Download](https://i.ibb.co/8D9MZghZ/Huzaifa-20251229173642.png)
+![Unzip](https://i.ibb.co/tMRH1JLg/Huzaifa-20251229173801.png)
+
+### 2. Load into Chrome
+Go to `chrome://extensions/`, enable **Developer Mode**, and click **Load Unpacked**. Select the extracted folder.
+
+![Developer Mode](https://i.ibb.co/jvLy8Z13/Huzaifa-20251229173407.png)
+![Select Folder](https://i.ibb.co/v6sn7xVC/Huzaifa-20251229173835.png)
+
+### 3. Success!
+The extension is now installed and ready to use.
+
+![Success](https://i.ibb.co/rRRmGb5B/Huzaifa-20251229173916.png)
 
 ---
 
 ## 🛠 How to Use
 
-### 1. The Popup Dashboard 🎛️
-Click the extension icon in your toolbar to:
-*   🏠 **Open BDRIS**: Quickly launch the verification website.
-*   📜 **View History**: Manage your saved numbers (Copy/Delete).
-*   ⚙️ **Settings**: Configure your history storage limit.
+### Autofill Flow
+1.  Go to the verification page.
+2.  Click the **Paste Number** button.
+3.  Paste your number and click **Auto Fill-Up**.
 
-### 2. Autofilling the Form 📝
-1.  Navigate to the BDRIS Verification page.
-2.  Click the red **"📝 Paste Number"** button (injected next to the input).
-3.  **Paste** a new number OR click **"Fill"** on a recent history item.
-4.  The Registration Number is filled, and the cursor **auto-jumps** to the *Date of Birth* field.
-5.  Simply type the date, solve the captcha, and search!
+![Usage](https://i.ibb.co/4Zy7mWrT/Huzaifa-20251229174024.png)
+![Filled](https://i.ibb.co/mCf5g0FR/Huzaifa-20251229174801.png)
+![History](https://i.ibb.co/mrgcPTfb/Huzaifa-20251229174816.png)
 
 ---
 

@@ -61,6 +61,13 @@ brnInput.addEventListener('input', () => {
     chrome.storage.local.set({ brn: brnInput.value });
 });
 
+// Bypass site restrictions (enable right-click, copy/paste, shortcuts)
+['contextmenu', 'paste', 'copy', 'cut', 'keydown', 'keyup', 'keypress', 'mousedown', 'mouseup'].forEach(event => {
+    brnInput.addEventListener(event, (e) => {
+        e.stopPropagation();
+    });
+});
+
 document.getElementById('bdris-close-x').addEventListener('click', () => {
     overlay.style.display = 'none';
 });
