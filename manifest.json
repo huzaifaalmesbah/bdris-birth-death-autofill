@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "BDRIS Birth & Death Autofill",
+  "version": "1.0.0",
+  "description": "Autofill Registration Number on BDRIS Birth & Death Verification Pages",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://everify.bdris.gov.bd/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["history.html"],
+      "matches": ["https://everify.bdris.gov.bd/*"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}

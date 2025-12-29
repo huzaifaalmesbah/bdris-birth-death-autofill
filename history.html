@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration History - BDRIS Autofill</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; background-color: #f9f9f9; }
+        h1 { color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; }
+        .btn { padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 14px; cursor: pointer; border: none; font-weight: 500; }
+        .btn-danger { background-color: #dc3545; color: white; }
+        .btn-danger:hover { background-color: #c82333; }
+        .history-list { list-style: none; padding: 0; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden; }
+        .history-item { padding: 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .history-item:last-child { border-bottom: none; }
+        .history-item:hover { background-color: #f8f8f8; }
+        .brn-text { font-size: 16px; font-weight: 600; color: #444; }
+        .actions { display: flex; gap: 10px; }
+        .copy-btn { color: #007bff; background: none; border: 1px solid #007bff; padding: 4px 8px; border-radius: 4px; font-size: 12px; cursor: pointer; }
+        .copy-btn:hover { background: #eaf4ff; }
+        .delete-btn { color: #dc3545; background: none; border: 1px solid #dc3545; padding: 4px 8px; border-radius: 4px; font-size: 12px; cursor: pointer; }
+        .delete-btn:hover { background: #ffeef0; }
+        #empty-msg { text-align: center; padding: 40px; color: #888; display: none; }
+    </style>
+</head>
+<body>
+    <h1>
+        <span>📋 Registration Numbers History</span>
+        <button id="clear-all" class="btn btn-danger">Clear All History</button>
+    </h1>
+    
+    <div id="empty-msg">No history found. Use the extension to save numbers!</div>
+    <ul id="history-list" class="history-list">
+        <!-- History Items -->
+    </ul>
+
+    <script src="history.js"></script>
+</body>
+</html>
